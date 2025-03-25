@@ -1,0 +1,52 @@
+/privacy-gram/
+│
+├── public/
+│   ├── index.html
+│   ├── favicon.ico
+│   └── manifest.json
+│
+├── src/
+│   ├── components/
+│   │   ├── Auth/
+│   │   │   ├── Login.js
+│   │   │   └── Logout.js
+│   │   ├── Feed/
+│   │   │   ├── Post.js
+│   │   │   └── Stories.js
+│   │   ├── Profile/
+│   │   │   ├── UserInfo.js
+│   │   │   └── Gallery.js
+│   │   ├── Common/
+│   │   │   ├── Navbar.js
+│   │   │   ├── ThemeSwitcher.js
+│   │   │   └── DownloadButton.js
+│   │   └── Privacy/
+│   │       ├── PrivacyPolicy.js
+│   │       └── DataUsage.js
+│   ├── contexts/
+│   │   ├── AuthContext.js
+│   │   └── ThemeContext.js
+│   ├── hooks/
+│   │   ├── useInstagramAPI.js
+│   │   └── useMediaDownloader.js
+│   ├── pages/
+│   │   ├── Home.js
+│   │   ├── Profile.js
+│   │   ├── Explore.js
+│   │   └── Settings.js
+│   ├── utils/
+│   │   ├── api.js
+│   │   ├── auth.js
+│   │   └── theme.js
+│   ├── App.js
+│   ├── index.js
+│   └── styles/
+│       ├── themes/
+│       │   ├── light.js
+│       │   ├── dark.js
+│       │   └── amoled.js
+│       └── global.css
+│
+├── .env
+├── package.json
+└── README.md
