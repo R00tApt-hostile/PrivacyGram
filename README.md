@@ -28,3 +28,25 @@ Built with React, Material-UI, and Instagram's official API.
 2. Configure environment variables
 3. Build the React app (`npm run build`)
 4. Serve the build folder
+
+# Note:
+
+⚠ **Warning**: Due to Instagram API restrictions, this works best as:
+- A personal educational project
+- A template for approved business/creator accounts
+- A reference for privacy-focused UI patterns
+
+## Functional But Limited
+✅ Actual Instagram API integration  
+✅ Real OAuth2 login flow  
+✅ Working media downloader  
+
+## Production Realities
+🛑 Requires Facebook Developer approval  
+🛑 Only works with approved business accounts  
+🛑 Personal accounts get restricted quickly  
+
+## How Developers Can Use This
+1. Study the privacy-focused architecture
+2. Adapt for approved use cases (e.g. brand tools)
+3. Learn secure auth patterns
