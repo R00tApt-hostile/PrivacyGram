@@ -1,0 +1,24 @@
+# ================ Backend ================
+FROM node:18-alpine as backend
+WORKDIR /server
+COPY server/package*.json ./
+RUN npm ci --only=production
+COPY server/ ./
+EXPOSE 5000
+CMD ["node", "index.js"]
+
+# ================ Frontend ================
+FROM node:18-alpine as frontend
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci
+COPY . .
+RUN npm run build
+
+# ================ Production ================
+FROM nginx:alpine
+COPY --from=frontend /app/build /usr/share/nginx/html
+COPY --from=backend /server /server
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
