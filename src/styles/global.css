@@ -1,0 +1,54 @@
+:root {
+  /* Dynamic variables set by ThemeContext */
+  --background-primary: #ffffff;
+  --background-secondary: #fafafa;
+  --text-primary: #262626;
+  --text-secondary: #8e8e8e;
+  --accent-color: #0095f6;
+  --border-color: #dbdbdb;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Accessibility focus styles */
+button:focus-visible, a:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+/* Scrollbar styling (works in Firefox & Chrome) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-color) var(--background-secondary);
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--background-secondary);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
