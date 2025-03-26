@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+.server/node_modules/
+
+# Environment
+.env
+.server/.env
+
+# Build
+build/
+dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+cypress/videos/
+cypress/screenshots/
